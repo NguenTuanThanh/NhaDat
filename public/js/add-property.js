@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(result => {
                 if (result.success) {
                     alert('Bất động sản đã được thêm thành công!');
-                    window.location.href = 'nhadat/public/dashboard.html';  // Chuyển hướng về trang dashboard
+                    window.location.href = '/nhadat/public/dashboard.html';  // Chuyển hướng về trang dashboard
                 } else {
                     alert('Đã xảy ra lỗi khi thêm bất động sản.');
                 }
