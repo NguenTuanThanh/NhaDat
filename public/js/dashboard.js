@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (data.success) {
               // Chuyển hướng về trang đăng nhập nếu đăng xuất thành công
               localStorage.removeItem("username");
-              window.location.href = "nhadat/public/index.html";
+              window.location.href = "/nhadat/public/index.html";
             } else {
               console.error("Lỗi đăng xuất:", data.message);
             }
@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
     userGreeting.textContent = `Hello, ${username}`; // Hiển thị tên người dùng
   } else {
     // Nếu không tìm thấy username, có thể chuyển hướng đến trang đăng nhập
-    window.location.href = "nhadat/public/index.html";
+    window.location.href = "/nhadat/public/index.html";
   }
 });
 
