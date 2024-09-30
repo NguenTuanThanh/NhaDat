@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thêm mới bất động sản</title>
+    <link rel="stylesheet" href="css/add-property.css" />
+  </head>
+  <body>
+    <div id="add-property-container">
+      <h1>Thêm mới bất động sản</h1>
+      <form id="add-property-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="status">Tình trạng:</label>
+            <input type="text" id="status" name="status" required />
+          </div>
+          <div class="form-group">
+            <label for="type">Phân loại:</label>
+            <input type="text" id="type" name="type" required />
+          </div>
+          <div class="form-group">
+            <label for="location">Vị trí:</label>
+            <input type="text" id="location" name="location" required />
+          </div>
+          <div class="form-group">
+            <label for="house_number">Số nhà:</label>
+            <input type="text" id="house_number" name="house_number" required />
+          </div>
+          <div class="form-group">
+            <label for="street">Đường:</label>
+            <input type="text" id="street" name="street" required />
+          </div>
+          <div class="form-group">
+            <label for="ward">Phường:</label>
+            <input type="text" id="ward" name="ward" required />
+          </div>
+          <div class="form-group">
+            <label for="district">Quận:</label>
+            <input type="text" id="district" name="district" required />
+          </div>
+          <div class="form-group">
+            <label for="width">Ngang:</label>
+            <input type="number" id="width" name="width" required />
+          </div>
+          <div class="form-group">
+            <label for="length">Dài:</label>
+            <input type="number" id="length" name="length" required />
+          </div>
+          <div class="form-group">
+            <label for="structure">Kết cấu:</label>
+            <input type="text" id="structure" name="structure" required />
+          </div>
+          <div class="form-group">
+            <label for="tn">TM:</label>
+            <input type="text" id="tn" name="tn" required />
+          </div>
+          <div class="form-group">
+            <label for="rent">Giá thuê:</label>
+            <input type="number" id="rent" name="rent" required />
+          </div>
+          <div class="form-group">
+            <label for="area">Diện tích:</label>
+            <input type="number" id="area" name="area" required />
+          </div>
+          <div class="form-group">
+            <label for="notes">Ghi chú:</label>
+            <textarea id="notes" name="notes"></textarea>
+          </div>
+        </div>
+        <div id="back-to-dashboard">
+          <button class="button" type="submit">Lưu</button>
+          <a href="dashboard.html" class="button"
+            >Quay lại Dashboard</a
+          >
+        </div>
+      </form>
+    </div>
+    <script src="js/add-property.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi Tiết Bất Động Sản</title>
+  <link rel="stylesheet" href="css/property-detail.css">
+</head>
+<body>
+  <h1>Chi Tiết Bất Động Sản</h1>
+  <form id="propertyForm" class="form-grid">
+    <div class="form-group">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" readonly>
+    </div>
+    <div class="form-group">
+    <label for="status">Tình Trạng:</label>
+    <input type="text" id="status" name="status">
+</div>
+<div class="form-group">
+    <label for="type">Phân Loại:</label>
+    <input type="text" id="type" name="type">
+</div>
+<div class="form-group">
+    <label for="location">Vị Trí:</label>
+    <input type="text" id="location" name="location">
+</div>
+<div class="form-group">
+    <label for="house-number">Số Nhà:</label>
+    <input type="text" id="house-number" name="house-number">
+</div>
+<div class="form-group">
+    <label for="street">Đường:</label>
+    <input type="text" id="street" name="street">
+</div>
+<div class="form-group">
+    <label for="ward">Phường:</label>
+    <input type="text" id="ward" name="ward">
+</div>
+<div class="form-group">
+    <label for="district">Quận:</label>
+    <input type="text" id="district" name="district">
+</div>
+<div class="form-group">
+    <label for="width">Ngang:</label>
+    <input type="text" id="width" name="width">
+</div>
+<div class="form-group">
+    <label for="length">Dài:</label>
+    <input type="text" id="length" name="length">
+</div>
+<div class="form-group">
+    <label for="structure">Kết Cấu:</label>
+    <input type="text" id="structure" name="structure">
+</div>
+<div class="form-group">
+    <label for="tn">TN:</label>
+    <input type="text" id="tn" name="tn">
+</div>
+<div class="form-group">
+    <label for="rent">Giá Thuê:</label>
+    <input type="text" id="rent" name="rent">
+</div>
+<div class="form-group">
+    <label for="area">Diện Tích:</label>
+    <input type="text" id="area" name="area">
+</div>
+<div class="form-group">
+    <label for="notes">Ghi Chú:</label>
+    <textarea id="notes" name="notes" class="notes" rows="4"></textarea>
+</div>
+    <!-- Các trường khác -->
+<div class="btn-container">
+    <button type="button" id="saveBtn">Lưu</button>
+    <button type="button" id="deleteBtn">Xóa</button>
+    <button type="button" id="cancelBtn">Hủy</button>
+</div>
+
+
+  </form>
+  <script src="js/property-detail.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <h2>Menu</h2>
+        <h2 id="userGreeting"></h2>
+        <ul>
+          <li>
+            <a href="#home" data-target="home"> <i class="fas fa-home"></i></a>
+          </li>
+          <li>
+            <a href="#properties" data-target="properties"
+              ><i class="fas fa-building"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#logout" id="logout" data-target="logout"
+              ><i class="fas fa-sign-out-alt"></i
+            ></a>
+          </li>
+        </ul>
+      </aside>
+      <main class="content">
+        <section id="home" class="tab-content">
+          <h1>Trang chủ</h1>
+          <p>Chào mừng bạn đến với trang dashboard!</p>
+        </section>
+
+        <section id="properties" class="tab-content">
+          <h1>Danh sách nhà đất</h1>
+          <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm..." />
+          </div>
+          <table id="propertiesTable">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Tình Trạng</th>
+                <th>Phân loại</th>
+                <th>Vị trí</th>
+                <th>Số nhà</th>
+                <th>Đường</th>
+                <th>Phường</th>
+                <th>Quận</th>
+                <th>Ngang</th>
+                <th>Dài</th>
+                <th>Kết cấu</th>
+                <th>TM</th>
+                <th>Giá thuê</th>
+                <th>Diện tích</th>
+                <th>Ghi chú</th>
+              </tr>
+            </thead>
+            <tbody id="properties-table-body">
+              <!-- Dữ liệu sẽ được tải vào đây bởi JavaScript -->
+            </tbody>
+          </table>
+          <div class="pagination">
+            <button id="first-page" title="Về đầu trang">
+              <i class="fas fa-angle-double-left"></i>
+            </button>
+            <button id="prev-page" title="Trang trước">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <input type="text" id="current-page" value="1" />
+            <div id="total-pages">Tổng số trang: 1</div>
+            <button id="next-page" title="Trang tiếp theo">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+            <button id="last-page" title="Cuối trang">
+              <i class="fas fa-angle-double-right"></i>
+            </button>
+          </div>
+          <div class="import-container">
+            <input type="file" id="importFile" style="display: none" />
+            <a href="add-property.html" id="add-new-button" class="action-btn"
+              >Thêm mới</a
+            >
+            <button id="importButton">Import Excel</button>
+          </div>
+        </section>
+        <section id="logout" class="tab-content">
+          <div id="logoutModal" class="modal"></div>
+        </section>
+      </main>
+    </div>
+    <script src="js/dashboard.js"></script>
+    <script src="js/import.js"></script>
+  </body>
+</html>
