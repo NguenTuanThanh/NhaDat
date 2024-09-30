@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const formData = new FormData();
             formData.append("file", file);
 
-            fetch("http://localhost:3000/api/import-excel", {
+            fetch("https://nguentuanthanh.github.io/api/import-excel", {
                 method: "POST",
                 body: formData,
             })
