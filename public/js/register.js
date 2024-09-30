@@ -5,7 +5,7 @@ document.getElementById("register-form").addEventListener("submit", function (e)
     const password = document.getElementById("register-password").value;
 
     // Kiểm tra username trước khi đăng ký
-    fetch("http://localhost:3000/check-username", {
+    fetch("https://nhadat-1.onrender.com/check-username", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -20,7 +20,7 @@ document.getElementById("register-form").addEventListener("submit", function (e)
         }
 
         // Tiến hành đăng ký nếu username không bị trùng
-        fetch("http://localhost:3000/register", {
+        fetch("https://nhadat-1.onrender.com/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
