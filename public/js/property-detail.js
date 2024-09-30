@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((response) => response.json())
       .then((data) => {
         alert("Cập nhật thành công!");
-        window.location.href = "nhadat/public/dashboard.html"; // Quay lại trang dashboard
+        window.location.href = "/nhadat/public/dashboard.html"; // Quay lại trang dashboard
       })
       .catch((error) => console.error("Lỗi khi cập nhật:", error));
   });
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then((response) => response.json())
         .then((data) => {
           alert("Xóa thành công!");
-          window.location.href = "nhadat/public/dashboard.html"; // Quay lại trang dashboard
+          window.location.href = "/nhadat/public/dashboard.html"; // Quay lại trang dashboard
         })
         .catch((error) => console.error("Lỗi khi xóa:", error));
     }
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.getElementById("cancelBtn").addEventListener("click", ()=>{
-  window.location.href = "nhadat/public/dashboard.html"; // Quay lại trang dashboard
+  window.location.href = "/nhadat/public/dashboard.html"; // Quay lại trang dashboard
 })
 
 function showNotification(message, type) {
