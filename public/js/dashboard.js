@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
           })
           .catch((error) => console.error("Error:", error));
       } else {
-        window.location.href = "nhadat/public/dashboard.html";
+        window.location.href = "/nhadat/public/dashboard.html";
         console.log("Đăng xuất bị hủy.");
       }
     });
