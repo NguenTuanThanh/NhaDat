@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const formData = new FormData(e.target);
             const data = Object.fromEntries(formData.entries());
 
-            fetch('http://localhost:3000/api/properties/add', {
+            fetch('https://nguentuanthanh.github.io/api/properties/add', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
