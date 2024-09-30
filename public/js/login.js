@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
           showNotification("Đăng nhập thành công", "success");
           localStorage.setItem("username", username);
           setTimeout(() => {
-            window.location.href = "/public/dashboard.html"; // Điều hướng về trang login sau khi đăng ký thành công
+            window.location.href = "/nhadat/public/dashboard.html"; // Điều hướng về trang login sau khi đăng ký thành công
           }, 3000);
         } else {
           alert("Đăng nhập thất bại");
