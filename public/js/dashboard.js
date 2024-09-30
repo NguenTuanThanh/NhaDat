@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("last-page").addEventListener("click", () => {
     // Tìm tổng số trang và chuyển đến trang cuối cùng
-    fetch("http://localhost:3000/api/properties/total")
+    fetch("https://nhadat-1.onrender.com/api/properties/total")
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function loadPage(page = 1, limit = 10) {
   const query = document.getElementById("searchInput").value.trim();
   fetch(
-    `http://localhost:3000/api/properties?page=${page}&limit=${limit}&search=${encodeURIComponent(
+    `https://nhadat-1.onrender.com/api/properties?page=${page}&limit=${limit}&search=${encodeURIComponent(
       query
     )}`
   )
