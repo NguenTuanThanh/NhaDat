@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.removeItem("rememberedUsername"); // Xóa thông tin nếu người dùng bỏ chọn "Lưu tài khoản"
     }
     // Gửi yêu cầu đăng nhập tới backend (cần điều chỉnh theo API backend của bạn)
-    fetch("http://localhost:3000/login", {
+    fetch("https://nhadat-1.onrender.com/login", {
       method: "POST",
       body: JSON.stringify({ username, password }),
       headers: { "Content-Type": "application/json" },
