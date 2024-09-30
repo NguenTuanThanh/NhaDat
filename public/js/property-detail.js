@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (propertyId) {
     // Gửi yêu cầu tới server để lấy chi tiết của bất động sản
-    fetch(`https://nguentuanthanh.github.io/api/properties/${propertyId}`)
+    fetch(`https://nhadat-1.onrender.com/api/properties/${propertyId}`)
       .then((response) => response.json())
       .then((data) => {
         document.getElementById("id").value = data.id;
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Lấy các giá trị khác từ form
     };
 
-    fetch(`https://nguentuanthanh.github.io/api/properties/${propertyId}`, {
+    fetch(`https://nhadat-1.onrender.com/api/properties/${propertyId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Sự kiện xóa
   document.getElementById("deleteBtn").addEventListener("click", () => {
     if (confirm("Bạn có chắc chắn muốn xóa bất động sản này?")) {
-      fetch(`http://localhost:3000/api/properties/${propertyId}`, {
+      fetch(`https://nhadat-1.onrender.com/api/properties/${propertyId}`, {
         method: "DELETE",
       })
         .then((response) => response.json())
