@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const formData = new FormData(e.target);
             const data = Object.fromEntries(formData.entries());
 
-            fetch('https://nguentuanthanh.github.io/api/properties/add', {
+            fetch('https://nhadat-1.onrender.com/api/properties/add', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
