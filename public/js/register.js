@@ -32,7 +32,7 @@ document.getElementById("register-form").addEventListener("submit", function (e)
             if (data.success) {
                 showNotification("Đăng ký thành công", "success");
                 setTimeout(() => {
-                    window.location.href = "/public/index.html";  // Điều hướng về trang login sau khi đăng ký thành công
+                    window.location.href = "/nhadat/public/index.html";  // Điều hướng về trang login sau khi đăng ký thành công
                 }, 3000);
             } else {
                 showNotification("Đăng ký thất bại", "error");
