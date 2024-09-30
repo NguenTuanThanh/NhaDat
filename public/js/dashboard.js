@@ -164,14 +164,14 @@ document.addEventListener("DOMContentLoaded", () => {
             if (data.success) {
               // Chuyển hướng về trang đăng nhập nếu đăng xuất thành công
               localStorage.removeItem("username");
-              window.location.href = "/public/index.html";
+              window.location.href = "nhadat/public/index.html";
             } else {
               console.error("Lỗi đăng xuất:", data.message);
             }
           })
           .catch((error) => console.error("Error:", error));
       } else {
-        window.location.href = "/public/dashboard.html";
+        window.location.href = "nhadat/public/dashboard.html";
         console.log("Đăng xuất bị hủy.");
       }
     });
@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
     userGreeting.textContent = `Hello, ${username}`; // Hiển thị tên người dùng
   } else {
     // Nếu không tìm thấy username, có thể chuyển hướng đến trang đăng nhập
-    window.location.href = "/index.html";
+    window.location.href = "nhadat/public/index.html";
   }
 });
 
