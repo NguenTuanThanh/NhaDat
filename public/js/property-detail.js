@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Lấy các giá trị khác từ form
     };
 
-    fetch(`http://localhost:3000/api/properties/${propertyId}`, {
+    fetch(`https://nguentuanthanh.github.io/api/properties/${propertyId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
