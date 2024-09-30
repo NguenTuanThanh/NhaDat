@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (propertyId) {
     // Gửi yêu cầu tới server để lấy chi tiết của bất động sản
-    fetch(`http://localhost:3000/api/properties/${propertyId}`)
+    fetch(`https://nguentuanthanh.github.io/api/properties/${propertyId}`)
       .then((response) => response.json())
       .then((data) => {
         document.getElementById("id").value = data.id;
